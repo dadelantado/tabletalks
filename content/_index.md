@@ -2,8 +2,8 @@
 title: "TableTalks"
 # Profile settings
 profileImage: "images/logo.jpg"        # path under static/
-name: "cx48"
-description: "Security Analyst | Frontend Developer | Content Writer"
+name: "TableTalks"
+description: "¡Únete a la serendipia!"
 socials:
   - url: "https://www.facebook.com/profile.php?id=61577754960201"
     icon: "fab fa-facebook"
