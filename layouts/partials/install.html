@@ -1,0 +1,13 @@
+{{ with .Params.install }}
+<div class="bg-white bg-opacity-10 rounded-lg p-6 mb-6 border border-white border-opacity-20">
+  <button id="installApp"><h2 class="text-xl font-bold mb-4 text-center">{{ .title }}</h2></button>
+  <div class="space-y-4">
+    {{ range .sections }}
+      <div>
+        <h3 class="font-semibold mb-2">{{ .heading }}</h3>
+        <p class="text-sm opacity-80">{{ .content }}</p>
+      </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
