@@ -10,6 +10,9 @@
     <div class="bg-animation" id="bgAnimation"></div>
 
     <div class="container mx-auto px-4 py-12 max-w-md">
+        <div class="text-center bg-white bg-opacity-10 rounded-lg p-6 mb-6 border border-white border-opacity-20">
+          <div><button id="installApp">Instalar Aplicación</button></a></div>
+        </div>
         <!-- Profile Section -->
         {{ partial "profile.html" . }}
 
@@ -31,6 +34,7 @@
         <!-- Embed with hue-shift filter -->
         <!-- style="filter: hue-rotate(150deg) saturate(0.6) brightness(0.9);" -->
 
+        
 
         
 
@@ -43,6 +47,23 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script>
+      let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+        deferredPrompt = e;
+    });
+
+    const installApp = document.getElementById('installApp');
+    installApp.addEventListener('click', async () => {
+        if (deferredPrompt !== null) {
+            deferredPrompt.prompt();
+            const { outcome } = await deferredPrompt.userChoice;
+            if (outcome === 'accepted') {
+                deferredPrompt = null;
+            }
+        }
+    });
+    </script>
         
 </body>
 </html>
