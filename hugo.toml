@@ -2,3 +2,9 @@ baseURL = ''
 languageCode = 'en-us'
 title = 'TableTalks'
 theme = 'LucentLink-Hugo'
+[params]
+  description     = "Una mesa, cinco desconocidos y una noche que puede cambiarlo todo."
+  googleAnalytics = ""    # your GA ID, if any
+
+[outputs]
+  home = ["HTML"]

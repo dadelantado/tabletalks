@@ -76,15 +76,16 @@ messaging:
 #  REMOVE "How to Customize This Page" section by removing the line "{{ partial "Instructions.html" . }}" in index.html file under layouts/
 
 
-# About section (optional section)
-
-# about:
-#   title: "About Me"
-#   sections:
-#     - heading: "Professional Background"
-#       content: "I'm a full-stack developer with 5+ years of experience building web applications. Specialized in JavaScript frameworks and cloud architecture."
-#     # - heading: "Current Focus"
-#     #   content: "Currently working on open-source tools to improve developer productivity and accessibility in web development."
-#     # - heading: "Personal Interests"
-#     #   content: "When not coding, I enjoy photography, hiking, and contributing to local tech communities through mentorship programs."
+#About section (optional section)
+about:
+   title: "Acerca de Table Talks"
+   sections:
+     - heading: "¿Qué es Table Talks?"
+       content: "Es una nueva forma de conocer personas sin expectativas. Cada Miércoles, reunimos a desconocidos alrededor de una mesa para compartir una cena, historias y conversaciones significativas.Rompemos la rutina y damos espacio a las conexiones reales"
+     - heading: "¿Cómo funciona?"
+       content: "Utilizamos un sistema inteligente que agrupa a las personsa según sus afinidades. Organizamos cenas para grupos de 5 a 7 personas, asegurándonos que compartan instereses en común. Tus respuestas nos ayudan a crear la mejor experiencia para ti."
+     - heading: "No somos una plataforma de citas."
+       content: "Nuestro objetivo es conectar a personas interesantes, sin prejucios, a través de una cena compartida. Cada quien llega con sus propias expectativas, pero siempre bajo un ambiente de respeto y apertura."
+     - heading: "¿Por qué cada Miercoles?"
+       content: "Sabemos que conocer realmente a alguien va más allá de un solo encuentro. Por eso, cada semana te damos un nuevo espacio para que las conversaciones fluyan, las relaciones crezcan y las experiencias se multipliquen."
 ---

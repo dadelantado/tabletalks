@@ -15,109 +15,34 @@
 
         <!-- Links Section -->
         {{ partial "link-card.html" . }}
-
-        <!-- Spotify Embed -->
-        {{ partial "spotify-playlist.html" . }}
+        
+        <!-- About Me section (If you want to write about yourself, uncomment the section below)--> 
+        {{ partial "about.html" . }}
 
         <!-- Messaging Etiquette section -->
         {{ partial "messaging-etiquette.html" . }}
+
+        <!-- Spotify Embed -->
+        <!--{{ partial "spotify-playlist.html" . }}->>
+
+        
           
         
         <!-- Embed with hue-shift filter -->
         <!-- style="filter: hue-rotate(150deg) saturate(0.6) brightness(0.9);" -->
 
 
-        <!-- About Me section (If you want to write about yourself, uncomment the section below)--> 
-        {{ partial "about.html" . }}
+        
 
-        <!-- Instructions section (After you're done adding your links, remove or comment the line below) -->
-        {{ partial "instructions.html" . }}
+       
 
         <footer class="text-center text-xs opacity-60">
-            © 2025 LucentLink | Made with ❤️
+            © 2025 TableTalks | Made with ❤️
         </footer>
         
     </div>
 
     <script src="js/script.js"></script>
-    <script>
-    function checkPWAInstallation() {
-        if ('getInstalledRelatedApps' in navigator) {
-            try {
-                const relatedApps = navigator.getInstalledRelatedApps();
-                if (relatedApps.length > 0) {
-                    console.log('PWA or related app is installed:', relatedApps);
-                    return true;
-                } else {
-                    console.log('No related app or PWA is installed.');
-                    return false;
-                }
-            } catch (error) {
-                console.error('Error checking related apps:', error);
-                return false;
-            }
-        } else {
-            console.log('getInstalledRelatedApps is not supported in this browser.');
-            return false;
-        }
-    }
-
-    function getPWADisplayMode() {
-        const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
-        if (isStandalone) {
-            console.log('PWA is running in standalone mode.');
-            return 'standalone';
-        } else {
-            console.log('PWA is running in browser mode.');
-            return 'browser';
-        }
-    }    
-    const isIos = () => {
-        const userAgent = window.navigator.userAgent.toLowerCase();
-        return /iphone|ipad|ipod/.test(userAgent);
-      };
-    
-      
-      function YaSeInstalo()
-      {
-        console.log("PWA fue instalada");
-        $('#divMensaje').fadeOut().promise().done(function(){
-          $('#login-box').fadeIn();
-        });
-        
-        $(btn).fadeOut();
-      }
-      window.addEventListener("appinstalled", () => {
-        //YaSeInstalo();
-        setTimeout(function(){
-          window.location.reload();
-        }, 1000)
-      });
-
-      let display_mode_get = getPWADisplayMode();
-      //console.log(display_mode_get);
-      //console.log(await checkPWAInstallation());
-      if(display_mode_get == 'standalone' || checkPWAInstallation())
-      {
-        YaSeInstalo();
-      }
-      $('#btnAndroid').on('click', function(e){
-        e.preventDefault();
-        $('#btnAndroid').addClass('active');
-        $('#btnIOS').removeClass('active');
-        $('#divIOS').fadeOut().promise().done(function(){
-          $('#divAndroid').fadeIn();
-        });
-      });
-      $('#btnIOS').on('click', function(e){
-        e.preventDefault();
-        $('#btnIOS').addClass('active');
-        $('#btnAndroid').removeClass('active');
-        $('#divAndroid').fadeOut().promise().done(function(){
-          $('#divIOS').fadeIn();
-        });
-      });
-    </script>
         
 </body>
 </html>
