@@ -88,7 +88,7 @@ about:
        content: "Nuestro objetivo es conectar a personas interesantes, sin prejucios, a través de una cena compartida. Cada quien llega con sus propias expectativas, pero siempre bajo un ambiente de respeto y apertura."
      - heading: "¿Por qué cada Miercoles?"
        content: "Sabemos que conocer realmente a alguien va más allá de un solo encuentro. Por eso, cada semana te damos un nuevo espacio para que las conversaciones fluyan, las relaciones crezcan y las experiencias se multipliquen."
-install:
-    title: "Instalar App"
+#install:
+    #title: "Instalar App"
     
 ---
