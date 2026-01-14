@@ -1,9 +1,9 @@
 baseURL = ''
 languageCode = 'en-us'
-title = 'TableTalks'
+title = 'Pet Food Depot Laguna'
 theme = 'LucentLink-Hugo'
 [params]
-  description     = "Una mesa, cinco desconocidos y una noche que puede cambiarlo todo."
+  description     = ""
   googleAnalytics = ""    # your GA ID, if any
 
 [outputs]
