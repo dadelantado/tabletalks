@@ -1,0 +1,35 @@
+/* styles.css */
+
+/* ---------- Circular header image ---------- */
+:root {
+  /* Adjust this value to change the diameter of the circle */
+  --circle-size: 200px;
+}
+
+.circle-img-wrapper {
+  width: var(--circle-size);
+  height: var(--circle-size);
+  overflow: hidden;
+  border-radius: 50%;
+  /* Optional: add a thin border around the circle */
+  border: 3px solid #dee2e6;
+  background: #fff;
+}
+
+/* Make the image fill the circle while preserving aspect ratio */
+.circle-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* crop to fill the circle */
+}
+
+/* ---------- Minor page tweaks (optional) ---------- */
+body {
+  /* keep a light background */
+  background-color: rgb(0 55 166) !important;
+}
+
+/* Ensure the suggestion dropdown appears above everything */
+.list-group {
+  z-index: 1050;
+}
